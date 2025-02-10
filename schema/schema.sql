@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS music_db;
 USE music_db;
 
 CREATE TABLE artists (
-  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT
 -- create a "name" column that's a varchar of max 100 characters
 );
 
