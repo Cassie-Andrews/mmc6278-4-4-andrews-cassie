@@ -2,13 +2,10 @@
 -- albums.name as album_name and albums.release_year
 -- sort by artist name and album name ascending
 
-SELECT 
-    artists.name AS artist_name
+SELECT
+  artists.name AS artist_name,
+  albums.name AS album_name,
+  albums.release_year
 FROM artists
-
-SELECT 
-    albums.name AS album_name,
-    albums.release_year
-FROM albums;
-
---JOIN albums ON artists.id = albums.artist_id;
+  INNER JOIN albums ON artists.id=albums.artist_id
+  ORDER BY artist_name, album_name;
