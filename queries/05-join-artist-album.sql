@@ -8,4 +8,4 @@ SELECT
   albums.release_year
 FROM artists
   INNER JOIN albums ON artists.id=albums.artist_id
-  ORDER BY artist_name, album_name;
+  ORDER BY artist_name, album_name ASC;
